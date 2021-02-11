@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>Student Registration Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/form.css">
+    </head>
+    <body>
+        <header><h1>Registration Page</h1></header>
+        <hr style="height:2px;border-width:0;color:rgb(0, 0, 0);background-color:rgb(0, 0, 0)">
+        <br/>
+        <div class="one">
+            <h3>Student Registration Form Using HTML</h3>
+
+            <!--FORM-->
+            <div class="two">
+                <form action="" id="myForm">
+                    <!--NAME-->
+                    <label for="fname">First name:</label>&emsp;&emsp;&emsp;
+                    <input type="text" id="fname" name="fname" placeholder="Gajendra"> (Maximum 50 characters Allowed)<br><br>
+                    <label for="lname">Last name:</label>&emsp;&emsp; &emsp;
+                    <input type="text" id="lname" name="lname" placeholder="Yadav"> (Maximum 50 characters Allowed)<br><br>
+                    <!--MAIL ID-->
+                    <label for="mail_id">Email Id:</label>&nbsp; &emsp;&emsp; &emsp;
+                    <input type="email" id="mail_id" name="mail_id" placeholder="ygajendra@gmail.com"><br><br>
+                    <!--MOBILE-->
+                    <label for="mobile">MobileNo:</label>&emsp;&emsp;&emsp;
+                    <input type="number" id="mobile" name="mobile" placeholder="98xxxxxx40"><br><br>
+                    <!--GENDER-->
+                    Gender: &emsp;&emsp;&emsp;&nbsp;&nbsp;
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label><br><br>
+                    <!--DOB-->
+                    <label for="birthday">Date of Birth:</label>&emsp;&nbsp; &nbsp;
+                    <input type="date" id="birthday" name="birthday"><br><br>
+                    <!--ADDRESS-->
+                    <label for="address">Address:</label>&nbsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
+                    <textarea id="address" name="address" rows="4" cols="50" style="vertical-align: middle;">
+                    </textarea><br><br>
+                    <label for="city">City:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
+                    <input type="text" id="city" name="city" placeholder="chennai"> (Maximum 50 characters Allowed)<br><br>
+                    <label for="pin">Pincode:</label>&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;
+                    <input type="number" id="pin" name="pin" placeholder="600001"> (Maximum 6 numbers Allowed)<br><br>
+                    <label for="state">State:</label>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
+                    <input type="text" id="state" name="state" placeholder="Tamilnadu"> (Maximum 50 characters Allowed)<br><br>
+                    <label for="country">Country:</label>&nbsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
+                    <input type="text" id="country" name="country" placeholder="India"> (Maximum 50 characters Allowed)<br><br>
+                    <!--HOBBIES-->
+                    Hobbies:  &emsp;&emsp;&emsp;&nbsp;
+                    <input type="checkbox" id="drawing" name="drawing" value="drawing">
+                    <label for="drawing"> Drawing</label>
+                    <input type="checkbox" id="singing" name="singing" value="singing">
+                    <label for="singing"> Singing</label>
+                    <input type="checkbox" id="games" name="games" value="games">
+                    <label for="games"> Gaming</label>
+                    <input type="checkbox" id="other" name="other" value="other">
+                    <label for="games"> Other</label><br><br>
+                    <!--QUALIFICATION-->
+                    Qualification:
+                    &nbsp;&emsp;&nbsp;<input type="checkbox" id="high" name="high" value="high">
+                    <label for="high"> High School(10)</label><br>
+                    &nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type="checkbox" id="hr" name="hr" value="hr">
+                    <label for="hr"> Higher school(12)</label><br>
+                    &nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type="checkbox" id="grad" name="grad" value="grad">
+                    <label for="grad"> Graduate</label><br>
+                    &nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type="checkbox" id="pg" name="pg" value="pg">
+                    <label for="pg"> POst Graduate</label><br>
+                    &nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type="checkbox" id="phd" name="phd" value="phd">
+                    <label for="phd"> PhD</label><br><br>
+                    <!--APPLIED COURSE-->
+                    Course Applied: &nbsp;<input type="radio" id="bca" name="course" value="bca">
+                    <label for="bca">BCA</label><br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type="radio" id="bcom" name="course" value="bcom">
+                    <label for="bcom">B.Com</label><br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type="radio" id="bsc" name="course" value="bsc">
+                    <label for="bsc">B.Sc</label><br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type="radio" id="mca" name="course" value="mca">
+                    <label for="mca">MCA</label><br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type="radio" id="mcom" name="course" value="mcom">
+                    <label for="mcom">M.Com</label><br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type="radio" id="msc" name="course" value="msc">
+                    <label for="msc">M.Sc</label><br><br><br><br>
+
+                    <input type="submit" value="Submit">
+                    <button onclick="myFunc()">Reset</button>
+                </form>
+                <!--END OF FORM-->
+            </div>
+        </div>
+        <script>
+            function myFunction() {
+              document.getElementById("myForm").reset();
+            }
+            </script>
+        
+    </body>
+</html>
